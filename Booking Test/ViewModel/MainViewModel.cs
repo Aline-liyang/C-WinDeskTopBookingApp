@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel;
 using System.Linq;
 using System.Text;
 using System.Threading;
@@ -20,10 +21,44 @@ namespace Booking_Test.ViewModel
         private ViewModelBase _currentChildView;
         private string _caption;
         private IconChar _icon;
+       
+
+        private ReservationModel _currentSelectedReservation;
 
         private IUserRepository userRepository;
 
+        private Guid _selectedReservationIdFromChild = Guid.Empty;
+
+       
+
+        public Guid SelectedReservationIdFromChild
+        {
+            get { return _selectedReservationIdFromChild; }
+            set
+            {
+                if (_selectedReservationIdFromChild != value)
+                {
+                    _selectedReservationIdFromChild = value;
+                    OnPropertyChanged(nameof(SelectedReservationIdFromChild));
+                }
+            }
+        }
+
         // Properties
+
+        public ReservationModel CurrentSelectedReservation
+        {
+            get => _currentSelectedReservation;
+            set
+            {
+                _currentSelectedReservation = value;
+                OnPropertyChanged(nameof(CurrentSelectedReservation));
+            }
+        }
+
+
+
+
         public UserAccountModel CurrentUserAccount
         {
             get => _currentUserAccount;
@@ -104,25 +139,37 @@ namespace Booking_Test.ViewModel
             LoadCurrentUserData();
         }
 
-        private void ExecuteShowAllReservationsListViewCommand(object obj)
+       private void ExecuteShowAllReservationsListViewCommand(object obj)
         {
-            CurrentChildView = new AllReservationsListViewModel();
+            AllReservationsListViewModel allReservationsListViewModel = new AllReservationsListViewModel();
+            CurrentChildView = allReservationsListViewModel;
+           
             Caption = "Reservation";
             Icon = IconChar.PhoneVolume;
         }
+
+        
+
+
+        private void ExecuteShowPaymentViewCommand(object obj)
+        {
+            Console.WriteLine("currentchildview1:   " + CurrentChildView);           
+           
+            Console.WriteLine("2: Selected reservation id: " + SelectedReservationIdFromChild);
+          
+            PaymentViewModel paymentViewModel = new PaymentViewModel(SelectedReservationIdFromChild);
+
+            Console.WriteLine("work fine");
+            Window paymentWindow = new PaymentView(SelectedReservationIdFromChild);
+            paymentWindow.Show();
+        } 
+
 
         private void ExecuteShowReportViewCommand(object obj)
         {
             Window reportWindow = new ReportView();
             reportWindow.Show();
         }
-
-        private void ExecuteShowPaymentViewCommand(object obj)
-        {
-            Window paymentWindow = new PaymentView();
-            paymentWindow.Show();
-        }
-
 
         private void ExecuteShowChargeViewCommand(object obj)
         {

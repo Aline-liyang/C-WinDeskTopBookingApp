@@ -13,6 +13,7 @@ using System.Windows.Interop;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
+using Booking_Test.ViewModel;
 
 namespace Booking_Test.View
 {
@@ -21,10 +22,12 @@ namespace Booking_Test.View
     /// </summary>
     public partial class PaymentView : Window
     {
-        public PaymentView()
+        public PaymentView(Guid reservationId)
         {
             InitializeComponent();
             this.MaxHeight = SystemParameters.MaximizedPrimaryScreenHeight;
+            PaymentViewModel paymentViewModel = new PaymentViewModel(reservationId);
+            this.DataContext = paymentViewModel;
         }
 
         [DllImport("user32.dll")]

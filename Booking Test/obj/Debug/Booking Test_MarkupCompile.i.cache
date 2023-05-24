@@ -4,16 +4,16 @@
 winexe
 C#
 .cs
-E:\CODE\BookTest\C-WinDeskTopBookingApp\Booking Test\obj\Debug\
+C:\yangli\ForWork\WinHotelProject\C-WinDeskTopBookingApp\Booking Test\obj\Debug\
 Booking_Test
 none
 false
 DEBUG;TRACE
-E:\CODE\BookTest\C-WinDeskTopBookingApp\Booking Test\App.xaml
+C:\yangli\ForWork\WinHotelProject\C-WinDeskTopBookingApp\Booking Test\App.xaml
 16821152270
 11-768848896
-54-1785288260
-17457428700
+5856626760
+171988948155
 CustomControls\BindablePasswordBox.xaml;MainWindow.xaml;Styles\ButtonStyles.xaml;Styles\UIColors.xaml;View\AllReservationListView.xaml;View\CalendarView.xaml;View\ChargeView.xaml;View\CreditCardView.xaml;View\CustomerView.xaml;View\HomeView.xaml;View\LoginView.xaml;View\MainView.xaml;View\PaymentView.xaml;View\ReportView.xaml;View\ReservationView.xaml;View\UsersView.xaml;
 
 False

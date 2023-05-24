@@ -14,7 +14,7 @@ namespace Booking_Test.Repositories
         public RepositoryBase()
         {
             //_connectionString = "Server=(localdb)\\MSSQLLocalDB;Database=MotelBookingMSDb;Integrated Security=true";
-            _connectionString = ConfigurationManager.ConnectionStrings["Booking_Test.Properties.Settings.MotelBookingMSDbConnectionString"].ConnectionString;
+            _connectionString = ConfigurationManager.ConnectionStrings["MotelBookingMSDbV2"].ConnectionString;
         }
         protected SqlConnection GetConnection()
         {

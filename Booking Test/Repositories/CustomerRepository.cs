@@ -95,6 +95,8 @@ namespace Booking_Test.Repositories
                             Postal_code = reader[10].ToString(),
                         };
 
+                        Console.WriteLine(customer);
+
                         customers.Add(customer);
                     }
                 }

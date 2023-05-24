@@ -26,5 +26,6 @@ namespace Booking_Test.View
             InitializeComponent();
             DataContext = new AllReservationsListViewModel();
         }
+
     }
 }

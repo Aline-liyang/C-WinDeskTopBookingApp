@@ -85,8 +85,10 @@
     <Compile Include="Model\CustomerModel.cs" />
     <Compile Include="Model\ICreditCardRepository.cs" />
     <Compile Include="Model\ICustomerRepository.cs" />
+    <Compile Include="Model\IPaymentRepository.cs" />
     <Compile Include="Model\IReservationRepository.cs" />
     <Compile Include="Model\IUserRepository.cs" />
+    <Compile Include="Model\PaymentModel.cs" />
     <Compile Include="Model\PeriodModel.cs" />
     <Compile Include="Model\RateAdjustmentModel.cs" />
     <Compile Include="Model\RateModel.cs" />
@@ -101,6 +103,7 @@
     <Compile Include="Model\UserModel.cs" />
     <Compile Include="Repositories\CreditCardRepository.cs" />
     <Compile Include="Repositories\CustomerRepository.cs" />
+    <Compile Include="Repositories\PaymentRepository.cs" />
     <Compile Include="Repositories\RepositoryBase.cs" />
     <Compile Include="Repositories\ReservationRepository.cs" />
     <Compile Include="Repositories\UserRepository.cs" />
@@ -111,6 +114,7 @@
     <Compile Include="ViewModel\HomeViewModel.cs" />
     <Compile Include="ViewModel\LoginViewModel.cs" />
     <Compile Include="ViewModel\MainViewModel.cs" />
+    <Compile Include="ViewModel\PaymentViewModel.cs" />
     <Compile Include="ViewModel\ReservationViewModel.cs" />
     <Compile Include="ViewModel\UsersViewModel.cs" />
     <Compile Include="ViewModel\ViewModelBase.cs" />

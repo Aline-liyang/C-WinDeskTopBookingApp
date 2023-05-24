@@ -114,3 +114,52 @@ E:\CODE\BookTest\C-WinDeskTopBookingApp\Booking Test\obj\Debug\View\AllReservati
 E:\CODE\BookTest\C-WinDeskTopBookingApp\Booking Test\obj\Debug\View\ChargeView.baml
 E:\CODE\BookTest\C-WinDeskTopBookingApp\Booking Test\obj\Debug\View\PaymentView.baml
 E:\CODE\BookTest\C-WinDeskTopBookingApp\Booking Test\obj\Debug\View\ReportView.baml
+C:\yangli\ForWork\WinHotelProject\C-WinDeskTopBookingApp\Booking Test\bin\Debug\Booking Test.exe.config
+C:\yangli\ForWork\WinHotelProject\C-WinDeskTopBookingApp\Booking Test\bin\Debug\Booking Test.exe
+C:\yangli\ForWork\WinHotelProject\C-WinDeskTopBookingApp\Booking Test\bin\Debug\Booking Test.pdb
+C:\yangli\ForWork\WinHotelProject\C-WinDeskTopBookingApp\Booking Test\bin\Debug\FontAwesome.Sharp.dll
+C:\yangli\ForWork\WinHotelProject\C-WinDeskTopBookingApp\Booking Test\obj\Debug\Booking Test.csproj.AssemblyReference.cache
+C:\yangli\ForWork\WinHotelProject\C-WinDeskTopBookingApp\Booking Test\obj\Debug\Booking Test.csproj.SuggestedBindingRedirects.cache
+C:\yangli\ForWork\WinHotelProject\C-WinDeskTopBookingApp\Booking Test\obj\Debug\Styles\ButtonStyles.baml
+C:\yangli\ForWork\WinHotelProject\C-WinDeskTopBookingApp\Booking Test\obj\Debug\Styles\UIColors.baml
+C:\yangli\ForWork\WinHotelProject\C-WinDeskTopBookingApp\Booking Test\obj\Debug\CustomControls\BindablePasswordBox.g.cs
+C:\yangli\ForWork\WinHotelProject\C-WinDeskTopBookingApp\Booking Test\obj\Debug\MainWindow.g.cs
+C:\yangli\ForWork\WinHotelProject\C-WinDeskTopBookingApp\Booking Test\obj\Debug\View\AllReservationListView.g.cs
+C:\yangli\ForWork\WinHotelProject\C-WinDeskTopBookingApp\Booking Test\obj\Debug\View\CalendarView.g.cs
+C:\yangli\ForWork\WinHotelProject\C-WinDeskTopBookingApp\Booking Test\obj\Debug\View\ChargeView.g.cs
+C:\yangli\ForWork\WinHotelProject\C-WinDeskTopBookingApp\Booking Test\obj\Debug\View\CreditCardView.g.cs
+C:\yangli\ForWork\WinHotelProject\C-WinDeskTopBookingApp\Booking Test\obj\Debug\View\CustomerView.g.cs
+C:\yangli\ForWork\WinHotelProject\C-WinDeskTopBookingApp\Booking Test\obj\Debug\View\HomeView.g.cs
+C:\yangli\ForWork\WinHotelProject\C-WinDeskTopBookingApp\Booking Test\obj\Debug\View\LoginView.g.cs
+C:\yangli\ForWork\WinHotelProject\C-WinDeskTopBookingApp\Booking Test\obj\Debug\View\MainView.g.cs
+C:\yangli\ForWork\WinHotelProject\C-WinDeskTopBookingApp\Booking Test\obj\Debug\View\PaymentView.g.cs
+C:\yangli\ForWork\WinHotelProject\C-WinDeskTopBookingApp\Booking Test\obj\Debug\View\ReportView.g.cs
+C:\yangli\ForWork\WinHotelProject\C-WinDeskTopBookingApp\Booking Test\obj\Debug\View\ReservationView.g.cs
+C:\yangli\ForWork\WinHotelProject\C-WinDeskTopBookingApp\Booking Test\obj\Debug\View\UsersView.g.cs
+C:\yangli\ForWork\WinHotelProject\C-WinDeskTopBookingApp\Booking Test\obj\Debug\App.g.cs
+C:\yangli\ForWork\WinHotelProject\C-WinDeskTopBookingApp\Booking Test\obj\Debug\Booking Test_Content.g.cs
+C:\yangli\ForWork\WinHotelProject\C-WinDeskTopBookingApp\Booking Test\obj\Debug\GeneratedInternalTypeHelper.g.cs
+C:\yangli\ForWork\WinHotelProject\C-WinDeskTopBookingApp\Booking Test\obj\Debug\Booking Test_MarkupCompile.cache
+C:\yangli\ForWork\WinHotelProject\C-WinDeskTopBookingApp\Booking Test\obj\Debug\Booking Test_MarkupCompile.lref
+C:\yangli\ForWork\WinHotelProject\C-WinDeskTopBookingApp\Booking Test\obj\Debug\App.baml
+C:\yangli\ForWork\WinHotelProject\C-WinDeskTopBookingApp\Booking Test\obj\Debug\CustomControls\BindablePasswordBox.baml
+C:\yangli\ForWork\WinHotelProject\C-WinDeskTopBookingApp\Booking Test\obj\Debug\MainWindow.baml
+C:\yangli\ForWork\WinHotelProject\C-WinDeskTopBookingApp\Booking Test\obj\Debug\View\AllReservationListView.baml
+C:\yangli\ForWork\WinHotelProject\C-WinDeskTopBookingApp\Booking Test\obj\Debug\View\CalendarView.baml
+C:\yangli\ForWork\WinHotelProject\C-WinDeskTopBookingApp\Booking Test\obj\Debug\View\ChargeView.baml
+C:\yangli\ForWork\WinHotelProject\C-WinDeskTopBookingApp\Booking Test\obj\Debug\View\CreditCardView.baml
+C:\yangli\ForWork\WinHotelProject\C-WinDeskTopBookingApp\Booking Test\obj\Debug\View\CustomerView.baml
+C:\yangli\ForWork\WinHotelProject\C-WinDeskTopBookingApp\Booking Test\obj\Debug\View\HomeView.baml
+C:\yangli\ForWork\WinHotelProject\C-WinDeskTopBookingApp\Booking Test\obj\Debug\View\LoginView.baml
+C:\yangli\ForWork\WinHotelProject\C-WinDeskTopBookingApp\Booking Test\obj\Debug\View\MainView.baml
+C:\yangli\ForWork\WinHotelProject\C-WinDeskTopBookingApp\Booking Test\obj\Debug\View\PaymentView.baml
+C:\yangli\ForWork\WinHotelProject\C-WinDeskTopBookingApp\Booking Test\obj\Debug\View\ReportView.baml
+C:\yangli\ForWork\WinHotelProject\C-WinDeskTopBookingApp\Booking Test\obj\Debug\View\ReservationView.baml
+C:\yangli\ForWork\WinHotelProject\C-WinDeskTopBookingApp\Booking Test\obj\Debug\View\UsersView.baml
+C:\yangli\ForWork\WinHotelProject\C-WinDeskTopBookingApp\Booking Test\obj\Debug\Booking Test.g.resources
+C:\yangli\ForWork\WinHotelProject\C-WinDeskTopBookingApp\Booking Test\obj\Debug\Booking_Test.Properties.Resources.resources
+C:\yangli\ForWork\WinHotelProject\C-WinDeskTopBookingApp\Booking Test\obj\Debug\Booking Test.csproj.GenerateResource.cache
+C:\yangli\ForWork\WinHotelProject\C-WinDeskTopBookingApp\Booking Test\obj\Debug\Booking Test.csproj.CoreCompileInputs.cache
+C:\yangli\ForWork\WinHotelProject\C-WinDeskTopBookingApp\Booking Test\obj\Debug\Booking Test.csproj.CopyComplete
+C:\yangli\ForWork\WinHotelProject\C-WinDeskTopBookingApp\Booking Test\obj\Debug\Booking Test.exe
+C:\yangli\ForWork\WinHotelProject\C-WinDeskTopBookingApp\Booking Test\obj\Debug\Booking Test.pdb

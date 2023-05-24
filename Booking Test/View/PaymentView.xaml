@@ -7,11 +7,12 @@
         xmlns:viewModel="clr-namespace:Booking_Test.ViewModel"
         xmlns:fa="http://schemas.awesome.incremented/wpf/xaml/fontawesome.sharp"
         mc:Ignorable="d"
-        Title="PaymentView" Height="550" Width="500"
+        Title="PaymentView" Height="550" Width="650"
         WindowStyle="None"
         WindowStartupLocation="CenterScreen"
         Background="Transparent"
         AllowsTransparency="True">
+
     <!-- Main section -->
     <Border CornerRadius="10,10,10,10"
             Grid.Column="1">
@@ -72,13 +73,142 @@
                         CornerRadius="10" 
                         Padding="10">
 
-                    <Label Content="Payment form -- binding Payment table CRUD"
+                    <!-- <Label Content="Payment form binding Payment table CRUD"
                                 HorizontalAlignment="Center"
                                 FontSize="13"
                                 Height="24"
                                 Foreground="#BCBEE0"
                                 FontWeight="Medium"
-                                FontFamily="Montserrat" />
+                                FontFamily="Montserrat" /> -->
+                    <Grid>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="4*"/>
+                            <RowDefinition Height="*"/>
+                        </Grid.RowDefinitions>
+
+                        <Grid Grid.Row="0">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="1.5*" />
+                                <ColumnDefinition Width="*" />
+                            </Grid.ColumnDefinitions>
+
+                            <Border Grid.Column="0"
+                                Background="#200F53"
+                                CornerRadius="10" 
+                                Padding="10"
+                                Margin="0,5,5,0">
+                                
+                                <Grid>
+
+                                    <Grid.RowDefinitions>
+                                        <RowDefinition  Height="*"/>
+                                        <RowDefinition  Height="*"/>
+                                        <RowDefinition  Height="*"/>
+                                        <RowDefinition  Height="*"/>
+                                        <RowDefinition  Height="*"/>
+                                        <RowDefinition  Height="*"/>
+                                        <RowDefinition  Height="*"/>
+                                        <RowDefinition  Height="*"/>
+                                        <RowDefinition  Height="2*"/>
+                                      
+                                    </Grid.RowDefinitions>
+
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="*" />
+                                        <ColumnDefinition Width="3*" />
+                                    </Grid.ColumnDefinitions>
+
+                                    <TextBlock  Grid.Row="0"   x:Name="textBlockFileNo" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" 
+                         Text="File No :" VerticalAlignment="Center" Width="85"   Foreground="#BCBEE0" FontFamily="Montserrat"  />
+                                    <TextBlock  Grid.Row="1"  x:Name="textBlockDate" HorizontalAlignment="Left" Height="23"  TextWrapping="Wrap" 
+                         Text="Date :"  VerticalAlignment="Center" Width="85"  Foreground="#BCBEE0" FontFamily="Montserrat"/>
+                                    <TextBlock  Grid.Row="2"  x:Name="textBlockMode" HorizontalAlignment="Left" Height="23"  TextWrapping="Wrap" 
+                         Text="Mode :"  VerticalAlignment="Center" Width="85"   Foreground="#BCBEE0" FontFamily="Montserrat"/>
+                                    <TextBlock  Grid.Row="3"  x:Name="textBlockCardNo" HorizontalAlignment="Left" Height="23"  TextWrapping="Wrap" 
+                         Text="# Card No :"  VerticalAlignment="Center" Width="86"   Foreground="#BCBEE0" FontFamily="Montserrat"/>
+                                    <TextBlock  Grid.Row="4"  x:Name="textBlockExpiry" HorizontalAlignment="Left" Height="23"  TextWrapping="Wrap" 
+                         Text="Expiry :"  VerticalAlignment="Center" Width="85"   Foreground="#BCBEE0" FontFamily="Montserrat"/>
+                                    <TextBlock  Grid.Row="5"  x:Name="textBlockAuthorisation" HorizontalAlignment="Left" Height="23"  TextWrapping="Wrap" 
+                         Text="Authorisation :"  VerticalAlignment="Center" Width="85"   Foreground="#BCBEE0" FontFamily="Montserrat"/>
+                                    <TextBlock  Grid.Row="6"  x:Name="textBlockAmount" HorizontalAlignment="Left" Height="23"  TextWrapping="Wrap" 
+                         Text="Amount :"  VerticalAlignment="Center" Width="85"   Foreground="#BCBEE0" FontFamily="Montserrat"/>
+                                    <TextBlock  Grid.Row="7"  x:Name="textBlockDetails" HorizontalAlignment="Left" Height="23"  TextWrapping="Wrap" 
+                         Text="Details :"  VerticalAlignment="Center" Width="85"   Foreground="#BCBEE0" FontFamily="Montserrat"/>
+
+                                    <!-- -->
+                                    <TextBox Grid.Row="0" Grid.Column="1" x:Name="textBoxFileNo" HorizontalAlignment="Left"  TextWrapping="Wrap"  VerticalAlignment="Center" Width="240" Height="23" Text="{Binding Reservation_id, UpdateSourceTrigger=PropertyChanged}" />
+                                    <TextBox  Grid.Row="1" Grid.Column="1" x:Name="textBoxDate" HorizontalAlignment="Left"  TextWrapping="Wrap"  VerticalAlignment="Center" Width="240" Height="23"  Text="{Binding Date}"  />
+                                    <TextBox  Grid.Row="2" Grid.Column="1" x:Name="textBoxMode" HorizontalAlignment="Left"  TextWrapping="Wrap"  VerticalAlignment="Center" Width="240" Height="23" Text="{Binding Mode, UpdateSourceTrigger=PropertyChanged}"/>
+                                    <TextBox  Grid.Row="3" Grid.Column="1" x:Name="textBoxCardNo" HorizontalAlignment="Left"  TextWrapping="Wrap"  VerticalAlignment="Center" Width="240" Height="23" Text="{Binding CardNumber, UpdateSourceTrigger=PropertyChanged}"/>
+                                    <TextBox  Grid.Row="4" Grid.Column="1" x:Name="textBoxExpiry" HorizontalAlignment="Left"  TextWrapping="Wrap"  VerticalAlignment="Center" Width="240" Height="23"  Text="{Binding Expiredate, UpdateSourceTrigger=PropertyChanged}"/>
+                                    <TextBox  Grid.Row="5" Grid.Column="1" x:Name="textBoxAuthorisation" HorizontalAlignment="Left"  TextWrapping="Wrap"  VerticalAlignment="Center" Width="240" Height="23" />
+                                    <TextBox  Grid.Row="6" Grid.Column="1" x:Name="textBoxAmount" HorizontalAlignment="Left"  TextWrapping="Wrap"  VerticalAlignment="Center" Width="240" Height="23" Text="{Binding Amount, UpdateSourceTrigger=PropertyChanged}"/>
+                                    <TextBox  Grid.Row="8" Grid.Column="0" Grid.ColumnSpan="2" x:Name="textBoxCountry" HorizontalAlignment="Left"  TextWrapping="Wrap"  VerticalAlignment="Center" Width="240" Height="46"  />
+                                    <!-- -->
+                                </Grid>
+                            </Border>
+
+                            <Border Grid.Column="1"
+                                Background="#200F53"
+                                CornerRadius="10" 
+                                Padding="10"
+                                Margin="0,5,5,0">
+
+                                <Grid>
+
+                                    <Grid.RowDefinitions>
+                                        <RowDefinition  Height="*"/>
+                                        <RowDefinition  Height="*"/>
+                                        <RowDefinition  Height="*"/>
+                                        <RowDefinition  Height="*"/>
+                                        <RowDefinition  Height="*"/>
+                                        <RowDefinition  Height="*"/>
+                                        <RowDefinition  Height="*"/>
+                                        <RowDefinition  Height="*"/>
+                                        <RowDefinition  Height="2*"/>
+
+                                    </Grid.RowDefinitions>
+
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="*" />
+                                        <ColumnDefinition Width="*" />
+                                    </Grid.ColumnDefinitions>
+
+                                    <TextBlock  Grid.Row="0"   x:Name="textBlockModeActual" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" 
+                         Text="ModeActual :" VerticalAlignment="Center" Width="90"   Foreground="#BCBEE0" FontFamily="Montserrat"  />
+                                    <TextBlock  Grid.Row="1"  x:Name="textBlockRate" HorizontalAlignment="Left" Height="23"  TextWrapping="Wrap" 
+                         Text="Rate :"  VerticalAlignment="Center" Width="90"  Foreground="#BCBEE0" FontFamily="Montserrat"/>
+                                    <TextBlock  Grid.Row="2"  x:Name="textBlockValue" HorizontalAlignment="Left" Height="23"  TextWrapping="Wrap" 
+                         Text="Value :"  VerticalAlignment="Center" Width="90"   Foreground="#BCBEE0" FontFamily="Montserrat"/>
+                                    <TextBlock  Grid.Row="3"  x:Name="textBlockAmountof" HorizontalAlignment="Left" Height="23"  TextWrapping="Wrap" 
+                         Text="Amount of :"  VerticalAlignment="Center" Width="90"   Foreground="#BCBEE0" FontFamily="Montserrat"/>
+                                    <TextBlock  Grid.Row="4"  x:Name="textBlockChange" HorizontalAlignment="Left" Height="23"  TextWrapping="Wrap" 
+                         Text="Change :"  VerticalAlignment="Center" Width="90"   Foreground="#BCBEE0" FontFamily="Montserrat"/>
+                                    
+                                    <!-- -->
+                                    <TextBox Grid.Row="0" Grid.Column="1" x:Name="textBoxModeActual" HorizontalAlignment="Left"  TextWrapping="Wrap"  VerticalAlignment="Center" Width="120" Height="23" Text="{Binding Mode, UpdateSourceTrigger=PropertyChanged}" />
+                                    <TextBox  Grid.Row="1" Grid.Column="1" x:Name="textBoxRate" HorizontalAlignment="Left"  TextWrapping="Wrap"  VerticalAlignment="Center" Width="120" Height="23"   />
+                                    <TextBox  Grid.Row="2" Grid.Column="1" x:Name="textBoxValue" HorizontalAlignment="Left"  TextWrapping="Wrap"  VerticalAlignment="Center" Width="120" Height="23" Text="{Binding Amount, UpdateSourceTrigger=PropertyChanged}" />
+                                    <TextBox  Grid.Row="3" Grid.Column="1" x:Name="textBoxAmountof" HorizontalAlignment="Left"  TextWrapping="Wrap"  VerticalAlignment="Center" Width="120" Height="23" />
+                                    <TextBox  Grid.Row="4" Grid.Column="1" x:Name="textBoxChange" HorizontalAlignment="Left"  TextWrapping="Wrap"  VerticalAlignment="Center" Width="120" Height="23" />
+                         
+                                    <!-- -->
+                                </Grid>
+                            </Border>
+                        </Grid>
+                        
+                        
+                        <Grid Grid.Row="1">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="*" />
+                                <ColumnDefinition Width="*" />
+                            </Grid.ColumnDefinitions>
+
+                            <Button  Grid.Column="0" x:Name="btnOK" Content="OK" HorizontalAlignment="Left" Margin="20,0,0,0"  VerticalAlignment="Center"  Width="100" Height="30"  Command="{Binding AddCustomerCommand}" Style="{StaticResource reservationButton}" />
+                            <Button  Grid.Column="1" x:Name="btnCancel" Content="Cancel" HorizontalAlignment="Left" Margin="20,0,0,0" VerticalAlignment="Center"  Width="100" Height="30"   Command="{Binding ModifyCustomerCommand}" Style="{StaticResource reservationButton}"/>
+
+                        </Grid>
+                    </Grid>
 
                 </Border>
 
